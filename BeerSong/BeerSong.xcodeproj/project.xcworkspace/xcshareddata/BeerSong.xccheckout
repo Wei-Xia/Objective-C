@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42B11EDA-A863-41D4-9E86-B05E0244C616</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BeerSong</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E662C023-03B2-42BA-BB37-73676626BC90</key>
+		<string>https://github.com/Wei-Xia/Objective-C.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BeerSong/BeerSong.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E662C023-03B2-42BA-BB37-73676626BC90</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Wei-Xia/Objective-C.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E662C023-03B2-42BA-BB37-73676626BC90</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E662C023-03B2-42BA-BB37-73676626BC90</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Objective-C</string>
+		</dict>
+	</array>
+</dict>
+</plist>

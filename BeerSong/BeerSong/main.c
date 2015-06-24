@@ -20,11 +20,13 @@ void singSongFor (int numberOfBottles)
         int oneFewer = numberOfBottles-1;
         printf("Take one down, pass it around, %d bottles of beer on the wall. \n\n", oneFewer);
         
-        singSongFor(oneFewer);   // This function calls itself
+        singSongFor(oneFewer);   // // function calling itself - this is called recursion
         
         // Print a message before the function ends
         printf("Put a bottle in the recycling, %d empty bottles in the bin. \n", numberOfBottles);
     }
+    
+    // The function returns when numberOfBottles reaches the value of zero.
 }
 
 int main(int argc, const char * argv[])
