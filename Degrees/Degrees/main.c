@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>   //way 2
 
 float fahrenheitFromCelsius(float cel)
 {
@@ -20,6 +21,7 @@ int main(int argc, const char * argv[])
     float freezeINC=0;
     float freezeINF=fahrenheitFromCelsius(freezeINC);
     printf("Water freezes at %f degrees Fahrenheit.\n", freezeINF);
-    return 0;
+    //return 0;
+    return EXIT_SUCCESS;  //way 2
 }
 
