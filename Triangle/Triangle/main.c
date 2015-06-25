@@ -8,11 +8,21 @@
 
 #include <stdio.h>
 
+double remainingAngle (double a, double b)
+{
+    double c=180-b-a;
+    return c;
+}
+
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
+    double angleA=30.73;
+    double angleB=67.50;
+    
+    double angleC= remainingAngle(angleA, angleB);
+    
+    printf("The third angle is %.2f \n", angleC);
+    
     return 0;
 }
 
