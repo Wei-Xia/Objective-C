@@ -11,6 +11,8 @@
 
 float lastTemperature;   //Global variables;
 
+//static float lastTemperature;   //use "static" to prevent from changing variables;
+
 float fahrenheitFromCelsius(float cel)
 {
     lastTemperature = cel;
