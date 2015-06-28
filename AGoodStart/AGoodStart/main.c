@@ -11,8 +11,14 @@
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
+    // Write the beginning of the novel
+    char *firstLine = "It was the best of times. \n";
+    char *secondLine = "It was the worst of times. \n";
+    
+    //print the beginning of the novel
+    printf(firstLine);
+    printf(secondLine);
+    
     return 0;
 }
 
