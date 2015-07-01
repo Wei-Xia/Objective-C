@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>    // for absolute value
 
 int main(int argc, const char * argv[])
 {
@@ -31,6 +32,9 @@ int main(int argc, const char * argv[])
     printf("11/3 = %d remainder of %d \n", 11/3, 11%3);
     printf("11/3.0 = %f\n", (float)11/3);
     
+    printf("\n");
+    
+    printf("The absolute value of -5 is %d.\n", abs(-5));
     
     return 0;
 }
