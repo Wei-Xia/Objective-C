@@ -24,6 +24,13 @@ int main(int argc, const char * argv[])
     printf("In octal, y is %lo. \n",y);
     printf("In hexadecimal, y is %lx. \n", y);
     
+    printf("\n");
+    
+    printf("3*3+5*2=%d\n", 3*3+5*2);
+    printf("11/3=%d\n", 11/3);
+    printf("11/3 = %d remainder of %d \n", 11/3, 11%3);
+    printf("11/3.0 = %f\n", (float)11/3);
+    
     
     return 0;
 }
