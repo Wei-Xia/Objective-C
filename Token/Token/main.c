@@ -10,9 +10,17 @@
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
+    
+    double y = 12345.6789;
+    
+    printf("y is %f\n",y);
+    printf("y is %e\n",y);
+ 
+    printf("\n");
+    
+    printf("y is %.2f\n",y);
+    printf("y is %.3e\n",y);
+    
     return 0;
 }
 
