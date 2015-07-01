@@ -29,5 +29,6 @@ int main(int argc, const char * argv[])
     printf("%.0f/%.0f, the remainder is %.0f.\n", z,w,remainder(z,w));
     
     return 0;
+    
 }
 
