@@ -10,12 +10,14 @@
 
 int main(int argc, const char * argv[])
 {
-    int i=19;
-    
-    do{
-        printf("%d.\n",i);
-        i=i-1;
-    }while(i==0);
+    int i=99;
+    while (i>=0) {
+        printf("Countdown:%d \n", i);
+        if (i%5==0) {
+            printf("Found one! \n");
+        }
+        i=i-3;
+    }
     
     return 0;
 }
