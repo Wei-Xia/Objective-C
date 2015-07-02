@@ -6,11 +6,19 @@
 //  Copyright (c) 2015 OO. All rights reserved.
 //
 
+#include <readline/readline.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, const char * argv[])
 {
-    int i=99;
+    
+    printf("Where should I start counting?");
+    
+    const char *num = readline(NULL);
+    
+    int i=atoi("num");
+    
     while (i>=0) {
         printf("Countdown:%d \n", i);
         if (i%5==0) {
