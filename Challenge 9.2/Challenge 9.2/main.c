@@ -12,48 +12,55 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[])
-{
 
-//    short int small;
-//    short int large;
-//    
-//    for (small=0; small<=0; small--) {
-//        printf("The smallest short integer is %d.\n",small);
-//    }
-//    
-//    for (large=0; large>=0; large++) {
-//        printf("The largest short integer is %d.\n",large);
-//    }
-//    
-//    return 0;
+{    
+    // what is the smallest number a short can hold and its largest
+        
+    short x;
+    short y;
+        
+    for (x = 0; x > -1; x++) {
+        continue;
+    }
+        
+    for (y = 0; y < 1; y--) {
+        continue;
+    }
+        
+    printf("Smallest short %d\n\nlargest short %d\n\n", x, y);
+        
+    // same question but unsigned short instead
+        
+    unsigned short i;
+        
+    for (i = 0; i < 1; i--) {
+        continue;
+    }
+    printf("largest unsigned short is %d\n\n", i);
     
     
+    
+   short int smallestNumber;
+    short int largestNumber;
+    
+    
+    
+    for (smallestNumber = 0; smallestNumber <= 0; smallestNumber--)
+    {
+         continue;
+    }
+    
+    printf("The smallest number a short int can store is %d.\n", smallestNumber);
 
+    
+    for (largestNumber = 0; largestNumber >= 0; largestNumber++)
+    {
         
-        // what is the smallest number a short can hold and its largest
-        
-        short x;
-        short y;
-        
-        for (x = 0; x > -1; x++) {
-            continue;
-        }
-        
-        for (y = 0; y < 1; y--) {
-            continue;
-        }
-        
-        printf("\nSmallest short %d\nlargest short %d\n", x, y);
-        
-        // same question but unsigned short instead
-        
-        unsigned short i;
-        
-        for (i = 0; i < 1; i--) {
-            continue;
-        }
-        printf("largest unsigned short is %d\n", i);
-        
-        return 0;
+        continue;
+    }
+            printf("The largest number a short int can store is %d.\n", largestNumber);
+    
+    
+    return 0;
 }
 

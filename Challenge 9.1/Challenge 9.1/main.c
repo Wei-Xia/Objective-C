@@ -20,6 +20,7 @@ int main(int argc, const char * argv[])
     printf("A int consumes %zu bytes\n\n", sizeof(int));
     printf("A double consumes %zu bytes\n\n", sizeof(double));
     printf("A long consumes %zu bytes\n\n", sizeof(long));
+    
     return 0;
 }
 
