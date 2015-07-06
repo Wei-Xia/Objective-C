@@ -19,6 +19,14 @@ int main(int argc, const char * argv[])
     printf("An int is %zu bytes \n",sizeof(int));
     printf("A pointer is %zu bytes \n", sizeof(int *));
     
+    printf("\n");
+    
+    *addressOfI=79;
+    printf("Now i is %d\n",i);
+    printf("An int is %zu bytes \n",sizeof(i));
+    printf("A pointer is %zu bytes \n", sizeof(addressOfI));
+    
+    
     return 0;
 }
 
