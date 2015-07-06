@@ -11,7 +11,7 @@
 int main(int argc, const char * argv[])
 {
 
-    int i=171;
+    int i=17;
     printf("i stores its value at %p\n", &i);
     printf("\n");
     
