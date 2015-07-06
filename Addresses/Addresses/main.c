@@ -23,6 +23,13 @@ int main(int argc, const char * argv[])
     
     printf("\n");
     printf("The int stored at addressofi is %d\n", *addressofi);
+
+    printf("\n");
+    int y;
+    int *addressofy=&y;
+    *addressofy=89;
+    
+    printf("Now y is %d\n", y);
     
     return 0;
 }
