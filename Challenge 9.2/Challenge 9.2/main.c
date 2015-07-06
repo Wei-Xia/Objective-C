@@ -10,7 +10,7 @@
 // An unsigned short only hold non-negative numbers. What is the largest number that an unsigned short can store?
 
 #include <stdio.h>
-#include <limits.h>
+#include <limits.h> //for Way Three
 
 int main(int argc, const char * argv[])
 
@@ -68,6 +68,7 @@ int main(int argc, const char * argv[])
             printf("The largest number a short int can store is %d.\n", largestNumber);
     
     
+    //Way Three
     printf("Minimum value of a signed short is %d\n", SHRT_MIN);
     printf("Maximum value of a signed short is %d\n", SHRT_MAX);
     printf("Maximum value of a unsigned short is %d\n", USHRT_MAX);
