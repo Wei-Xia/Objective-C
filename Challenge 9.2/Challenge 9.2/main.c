@@ -5,9 +5,9 @@
 //  Created by Wei on 7/6/15.
 //  Copyright (c) 2015 OO. All rights reserved.
 //
-// On a Mac, a short is 2-byte integer, and one bit is used to hold the sign. What is the smallest number that a shor can store?
+// On a Mac, a short is 2-byte integer, and one bit is used to hold the sign. What is the smallest number that a short can store?
 // What is the largest?
-// An unsigned short only hold non-negative numbers. What is the largest number that an unsigned short can store?
+
 
 #include <stdio.h>
 #include <limits.h> //for Way Three
@@ -28,22 +28,10 @@ int main(int argc, const char * argv[])
     for (y = 0; y < 1; y--) {
         continue;
     }
+    printf("Largest short is %d. \n",y);
+    
         
-//    printf("Smallest short %d\n\nlargest short %d\n\n", x, y);
-        
-    //same question but unsigned short instead
-        
-//    unsigned short m;
-//    unsigned short n;
-//        
-//    for (m = 0; m < 1; m--) {
-//        continue;
-//    }
-//    
-//    for (n=0; n>-1; n++) {
-//        continue;
-//    }
-//    printf("largest unsigned short is %d\n\n", m);
+
     
     
     //Way Two
@@ -65,7 +53,7 @@ int main(int argc, const char * argv[])
         
         continue;
     }
-            printf("The largest number a short int can store is %d.\n", largestNumber);
+        printf("The largest number a short int can store is %d.\n", largestNumber);
     
     
     //Way Three
