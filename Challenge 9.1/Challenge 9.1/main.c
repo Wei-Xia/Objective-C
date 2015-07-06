@@ -14,8 +14,12 @@ int main(int argc, const char * argv[])
 
     // how much memory float consumes
     
-    printf("a float consumes %zu bytes\n\n", sizeof(float));
-    
+    printf("A char consumes %zu bytes\n\n", sizeof(char));
+    printf("A short consumes %zu bytes\n\n", sizeof(short));
+    printf("A float consumes %zu bytes\n\n", sizeof(float));
+    printf("A int consumes %zu bytes\n\n", sizeof(int));
+    printf("A double consumes %zu bytes\n\n", sizeof(double));
+    printf("A long consumes %zu bytes\n\n", sizeof(long));
     return 0;
 }
 
