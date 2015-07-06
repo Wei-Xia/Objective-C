@@ -10,37 +10,44 @@
 // An unsigned short only hold non-negative numbers. What is the largest number that an unsigned short can store?
 
 #include <stdio.h>
+#include <limits.h>
 
 int main(int argc, const char * argv[])
 
 {    
-    // what is the smallest number a short can hold and its largest
-        
+    //Way One
+    
     short x;
     short y;
         
     for (x = 0; x > -1; x++) {
         continue;
     }
+    printf("Smallest short is %d. \n",x);
         
     for (y = 0; y < 1; y--) {
         continue;
     }
         
-    printf("Smallest short %d\n\nlargest short %d\n\n", x, y);
+//    printf("Smallest short %d\n\nlargest short %d\n\n", x, y);
         
-    // same question but unsigned short instead
+    //same question but unsigned short instead
         
-    unsigned short i;
-        
-    for (i = 0; i < 1; i--) {
-        continue;
-    }
-    printf("largest unsigned short is %d\n\n", i);
+//    unsigned short m;
+//    unsigned short n;
+//        
+//    for (m = 0; m < 1; m--) {
+//        continue;
+//    }
+//    
+//    for (n=0; n>-1; n++) {
+//        continue;
+//    }
+//    printf("largest unsigned short is %d\n\n", m);
     
     
-    
-   short int smallestNumber;
+    //Way Two
+    short int smallestNumber;
     short int largestNumber;
     
     
@@ -59,6 +66,11 @@ int main(int argc, const char * argv[])
         continue;
     }
             printf("The largest number a short int can store is %d.\n", largestNumber);
+    
+    
+    printf("Minimum value of a signed short is %d\n", SHRT_MIN);
+    printf("Maximum value of a signed short is %d\n", SHRT_MAX);
+    printf("Maximum value of a unsigned short is %d\n", USHRT_MAX);
     
     
     return 0;
