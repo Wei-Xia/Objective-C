@@ -28,39 +28,28 @@ int main(int argc, const char * argv[])
     for (y = 0; y < 1; y--) {
         continue;
     }
-    printf("Largest short is %d. \n",y);
-    
-        
-
-    
+    printf("Largest short is %d. \n\n",y);
     
     //Way Two
-    short int smallestNumber;
-    short int largestNumber;
     
+    short smallestNumber;
+    short largestNumber;
     
-    
-    for (smallestNumber = 0; smallestNumber <= 0; smallestNumber--)
-    {
-         continue;
-    }
-    
-    printf("The smallest number a short int can store is %d.\n", smallestNumber);
-
-    
-    for (largestNumber = 0; largestNumber >= 0; largestNumber++)
-    {
-        
+    for (smallestNumber = 0; smallestNumber >= 0; smallestNumber++){
         continue;
     }
-        printf("The largest number a short int can store is %d.\n", largestNumber);
+    printf("The smallest number a short int can store is %d.\n", smallestNumber);
+
+    for (largestNumber = 0; largestNumber <= 0; largestNumber--){
+        continue;
+    }
+    printf("The largest number a short int can store is %d.\n\n", largestNumber);
     
     
     //Way Three
+    
     printf("Minimum value of a signed short is %d\n", SHRT_MIN);
     printf("Maximum value of a signed short is %d\n", SHRT_MAX);
-    printf("Maximum value of a unsigned short is %d\n", USHRT_MAX);
-    
     
     return 0;
 }
