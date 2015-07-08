@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B6A681511B4CBAD90081F0F5"
-               BuildableName = "Struct"
-               BlueprintName = "Struct 1.1"
-               ReferencedContainer = "container:Struct 1.1.xcodeproj">
+               BlueprintIdentifier = "B6A6817B1B4CBFDE0081F0F5"
+               BuildableName = "Struct 1.3"
+               BlueprintName = "Struct 1.3"
+               ReferencedContainer = "container:Struct 1.3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B6A681511B4CBAD90081F0F5"
-            BuildableName = "Struct"
-            BlueprintName = "Struct 1.1"
-            ReferencedContainer = "container:Struct 1.1.xcodeproj">
+            BlueprintIdentifier = "B6A6817B1B4CBFDE0081F0F5"
+            BuildableName = "Struct 1.3"
+            BlueprintName = "Struct 1.3"
+            ReferencedContainer = "container:Struct 1.3.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B6A681511B4CBAD90081F0F5"
-            BuildableName = "Struct"
-            BlueprintName = "Struct 1.1"
-            ReferencedContainer = "container:Struct 1.1.xcodeproj">
+            BlueprintIdentifier = "B6A6817B1B4CBFDE0081F0F5"
+            BuildableName = "Struct 1.3"
+            BlueprintName = "Struct 1.3"
+            ReferencedContainer = "container:Struct 1.3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B6A681511B4CBAD90081F0F5"
-            BuildableName = "Struct"
-            BlueprintName = "Struct 1.1"
-            ReferencedContainer = "container:Struct 1.1.xcodeproj">
+            BlueprintIdentifier = "B6A6817B1B4CBFDE0081F0F5"
+            BuildableName = "Struct 1.3"
+            BlueprintName = "Struct 1.3"
+            ReferencedContainer = "container:Struct 1.3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
