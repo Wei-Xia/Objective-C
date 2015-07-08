@@ -20,16 +20,21 @@ void metersToFeetAndInches(double meters,  int *ftPtr, double *inPtr)
     int feet = (int)rawFeet;
 
     // Store the number of feet at the supplied address
-    printf("Storing %u to the address %p\n", feet, ftPtr);
-    *ftPtr = feet;
+    if(ftPtr){
+        printf("Storing %u to the address %p\n", feet, ftPtr);
+        *ftPtr = feet;
+    }
     
     // Calculate inches
     double fractionalFoot = rawFeet-feet;
     double inches = fractionalFoot*12.0;
     
     // Store the number of inches at the supplied address
-    printf("Storing %.2f to the address %p\n", inches, inPtr);
-    *inPtr=inches;
+    if (inPtr) {
+        printf("Storing %.2f to the address %p\n", inches, inPtr);
+        *inPtr=inches;
+    }
+
 }
 
 int main(int argc, const char * argv[])
