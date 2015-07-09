@@ -14,10 +14,10 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         NSHost *host = [NSHost currentHost];
-        //NSString *name=[host localizedName];
+        NSString *name=[host localizedName];
         
-        //NSLog(@"The name of the computer %@",name);
-        NSLog(@"My host is %@", host);
+        NSLog(@"The name of the computer is %@",name);
+        //NSLog(@"My host is %@", host);
         
     }
     return 0;
