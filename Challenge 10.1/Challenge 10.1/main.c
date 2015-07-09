@@ -9,24 +9,36 @@
 #include <stdio.h>
 #include <math.h>
 
-void metersToFeetAndInches(double meters,  int *ftPtr, double *inPtr)
+void metersToFeetAndInches(double meters, unsigned int *ftPtr, double *inPtr)
 {
-    double rawFeet = meters *3.281;
+    double feet;
     
-    double feet = (int)rawFeet;
+    double fractionalPart = modf((meters * 3.281), &feet);
     
-    double inches = modf(rawFeet,&feet);
+    if (ftPtr)
+    {
+        printf("Storing %f (double feet) to the address %p\n", feet, ftPtr);
+        *ftPtr = (int)feet;
+    }
+    
+    double inches = fractionalPart * 12.0;
+    
+    if (inPtr)
+    {
+        printf("Storing %.2f (double inches) to the address %p\n", inches, inPtr);
+        *inPtr = inches;
+    }
 }
 
 int main(int argc, const char * argv[])
 {
-    double meters =3.0;
-    double feet;
+    
+    double meters = 3.0;
+    unsigned int feet;
     double inches;
     
     metersToFeetAndInches(meters, &feet, &inches);
-    
-    printf("%.0f meters is equal to %d feet and %.2f inches.\n", meters, feet, inches);
+    printf("%.1f meters is equal to %d feet and %.1f inches.\n", meters, feet, inches);
     
     return 0;
 }
