@@ -18,8 +18,11 @@ int main(int argc, const char * argv[])
         NSLog(@"The date is %@", now);
         
         double seconds=[now timeIntervalSince1970];
-        
         NSLog(@"It has been %f seconds since the statt of 1970.", seconds);
+        
+        // Sending bogus messages to see errors
+        double testSeconds = [NSDate timeintervalsince1970];
+        NSDate *testNow = [now date];
         
     }
     return 0;
