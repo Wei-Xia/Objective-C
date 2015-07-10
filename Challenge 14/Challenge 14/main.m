@@ -18,15 +18,18 @@ int main(int argc, const char * argv[])
         [comps setYear:1990];
         [comps setMonth:8];
         [comps setDay:12];
-        [comps setHour:13];
+        [comps setHour:18];
         [comps setMinute:29];
         [comps setSecond:32];
         
         NSCalendar *g = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
         NSDate *dateOfBirth = [g dateFromComponents:comps];
+        NSLog(@"My birthday is %@", dateOfBirth);
         
-        NSDate *laterDate
-        double secondsSinceEarlierDate = [laterDate timeIntervalsinceDate:dateOfBirth];
+        
+        NSDate *now = [NSDate date];
+        double secondsSinceEarlierDate = [now timeIntervalSinceDate:dateOfBirth];
+        NSLog(@"I have been living for %.0f seconds.\n", secondsSinceEarlierDate);
         
     }
     return 0;
