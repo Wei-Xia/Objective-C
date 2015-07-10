@@ -13,10 +13,16 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
+        NSDate *now = [NSDate date];
+        
         NSCalendar *cal = [NSCalendar currentCalendar];
         NSLog(@"My calendar is %@", [cal calendarIdentifier]);
         
+        NSUInteger day = [cal ordinalityOfUnit:NSDayCalendarUnit
+                                        inUnit:NSMonthCalendarUnit
+                                       forDate:now];
         
+        NSLog(@"This is day %lu of the month", day);
         
     }
     return 0;
