@@ -27,6 +27,11 @@ int main(int argc, const char * argv[])
         NSLog(@"CurrentTime's value is %p", currentTime);
         NSLog(@"The address of the original object is %p", startTime);
         
+        sleep(1);
+        
+        currentTime= nil;
+        NSLog(@"CurrentTime's value is %p", currentTime);
+        
     }
     return 0;
 }
