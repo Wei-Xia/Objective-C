@@ -13,8 +13,12 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSString *lament = @"Why me?";
+        NSLog(@"%@",lament);
+        
+        NSString *slogan = @"I \u2661 New York!";
+        NSLog(@"%@", slogan);
+        
         
     }
     return 0;
