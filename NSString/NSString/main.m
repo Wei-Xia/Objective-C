@@ -22,6 +22,12 @@ int main(int argc, const char * argv[])
         if ([slogan isEqualToString:lament]) {
             NSLog(@"%@ and %@ are equal.", slogan, lament);
         }
+        
+        NSString *angryText = @"That makes me so mad!";
+        NSLog(@"%@", angryText);
+        
+        NSString *reallyAngryText = [angryText uppercaseString];
+        NSLog(@"%@", reallyAngryText);
     }
     return 0;
 }
