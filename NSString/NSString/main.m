@@ -19,7 +19,7 @@ int main(int argc, const char * argv[])
         NSString *slogan = @"I \u2661 New York!";
         NSLog(@"%@", slogan);
         
-        
+        //NSString *dateString = [ NSString stringWithFormat:@"The date is %@", now];     still confused about this s.
     }
     return 0;
 }
