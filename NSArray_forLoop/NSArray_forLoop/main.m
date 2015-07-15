@@ -28,7 +28,7 @@ int main(int argc, const char * argv[])
             NSLog(@"Here is a date: %@", d);
         }
         
-        NSLog(@"\n");
+        printf("\n");
         
         // Way two, use more terse syntax
         for (NSDate *d in dateList) {
