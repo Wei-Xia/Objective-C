@@ -19,7 +19,8 @@ int main(int argc, const char * argv[])
         NSDate *yesterday = [now dateByAddingTimeInterval:-24.0*60.0*60.0];
         
         // Create an empty mutable array
-        NSMutableArray *dateList = [NSMutableArray array];
+        //NSMutableArray *dateList = [NSMutableArray array];    // Way One
+        NSMutableArray *dateList = [[NSMutableArray alloc] init];   // Way Two
         
         // Add two dates to the array
         [dateList addObject:now];
