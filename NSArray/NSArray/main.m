@@ -28,6 +28,8 @@ int main(int argc, const char * argv[])
         
         // How many dates are in the array?
         NSLog(@"There are %lu dates.", [dateList count]);
+        
+        NSLog(@"The third date is %@.",dateList[4]);  //Crash due to out-of-range
     }
     return 0;
 }
