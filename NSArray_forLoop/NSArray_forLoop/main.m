@@ -27,6 +27,13 @@ int main(int argc, const char * argv[])
             NSDate *d = dateList[i];
             NSLog(@"Here is a date: %@", d);
         }
+        
+        NSLog(@"\n");
+        
+        // Way two, use more terse syntax
+        for (NSDate *d in dateList) {
+            NSLog(@"Here is a date: %@",d);
+        }
     }
     return 0;
 }
