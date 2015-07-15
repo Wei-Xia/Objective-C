@@ -22,6 +22,8 @@ int main(int argc, const char * argv[])
         //NSMutableArray *dateList = [NSMutableArray array];    // Way One
         NSMutableArray *dateList = [[NSMutableArray alloc] init];   // Way Two
         
+        //NSArray *dateList = [NSArray arrayWithObjects: now, tomorrow, yesterday, nil];   // Way three to create regular array
+        
         // Add two dates to the array
         [dateList addObject:now];
         [dateList addObject:tomorrow];
