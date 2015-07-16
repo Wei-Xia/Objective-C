@@ -10,4 +10,12 @@
 
 @interface BNRPerson : NSObject
 
+{
+    // BNRPerson has two instance variable
+    
+    float _heightInMeters;
+    int _weightInKilos;
+    
+}
+
 @end

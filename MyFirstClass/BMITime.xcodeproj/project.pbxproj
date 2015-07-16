@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B6CE19181B57411600904ED7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CE19171B57411600904ED7 /* Foundation.framework */; };
 		B6CE191B1B57411600904ED7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CE191A1B57411600904ED7 /* main.m */; };
-		B6CE191F1B57411600904ED7 /* MyFirstClass.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6CE191E1B57411600904ED7 /* MyFirstClass.1 */; };
+		B6CE191F1B57411600904ED7 /* BMITime.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6CE191E1B57411600904ED7 /* BMITime.1 */; };
 		B6CE19271B57415800904ED7 /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CE19261B57415800904ED7 /* BNRPerson.m */; };
 /* End PBXBuildFile section */
 
@@ -20,18 +20,18 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				B6CE191F1B57411600904ED7 /* MyFirstClass.1 in CopyFiles */,
+				B6CE191F1B57411600904ED7 /* BMITime.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B6CE19141B57411600904ED7 /* MyFirstClass */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyFirstClass; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CE19141B57411600904ED7 /* BMITime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BMITime; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CE19171B57411600904ED7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6CE191A1B57411600904ED7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B6CE191D1B57411600904ED7 /* MyFirstClass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFirstClass-Prefix.pch"; sourceTree = "<group>"; };
-		B6CE191E1B57411600904ED7 /* MyFirstClass.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MyFirstClass.1; sourceTree = "<group>"; };
+		B6CE191D1B57411600904ED7 /* BMITime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMITime-Prefix.pch"; sourceTree = "<group>"; };
+		B6CE191E1B57411600904ED7 /* BMITime.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BMITime.1; sourceTree = "<group>"; };
 		B6CE19251B57415800904ED7 /* BNRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRPerson.h; sourceTree = "<group>"; };
 		B6CE19261B57415800904ED7 /* BNRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +51,7 @@
 		B6CE190B1B57411600904ED7 = {
 			isa = PBXGroup;
 			children = (
-				B6CE19191B57411600904ED7 /* MyFirstClass */,
+				B6CE19191B57411600904ED7 /* BMITime */,
 				B6CE19161B57411600904ED7 /* Frameworks */,
 				B6CE19151B57411600904ED7 /* Products */,
 			);
@@ -60,7 +60,7 @@
 		B6CE19151B57411600904ED7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6CE19141B57411600904ED7 /* MyFirstClass */,
+				B6CE19141B57411600904ED7 /* BMITime */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,22 +73,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B6CE19191B57411600904ED7 /* MyFirstClass */ = {
+		B6CE19191B57411600904ED7 /* BMITime */ = {
 			isa = PBXGroup;
 			children = (
 				B6CE191A1B57411600904ED7 /* main.m */,
 				B6CE19251B57415800904ED7 /* BNRPerson.h */,
 				B6CE19261B57415800904ED7 /* BNRPerson.m */,
-				B6CE191E1B57411600904ED7 /* MyFirstClass.1 */,
+				B6CE191E1B57411600904ED7 /* BMITime.1 */,
 				B6CE191C1B57411600904ED7 /* Supporting Files */,
 			);
+			name = BMITime;
 			path = MyFirstClass;
 			sourceTree = "<group>";
 		};
 		B6CE191C1B57411600904ED7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B6CE191D1B57411600904ED7 /* MyFirstClass-Prefix.pch */,
+				B6CE191D1B57411600904ED7 /* BMITime-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -96,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6CE19131B57411600904ED7 /* MyFirstClass */ = {
+		B6CE19131B57411600904ED7 /* BMITime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6CE19221B57411600904ED7 /* Build configuration list for PBXNativeTarget "MyFirstClass" */;
+			buildConfigurationList = B6CE19221B57411600904ED7 /* Build configuration list for PBXNativeTarget "BMITime" */;
 			buildPhases = (
 				B6CE19101B57411600904ED7 /* Sources */,
 				B6CE19111B57411600904ED7 /* Frameworks */,
@@ -108,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = MyFirstClass;
+			name = BMITime;
 			productName = MyFirstClass;
-			productReference = B6CE19141B57411600904ED7 /* MyFirstClass */;
+			productReference = B6CE19141B57411600904ED7 /* BMITime */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +123,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Wei Xia";
 			};
-			buildConfigurationList = B6CE190F1B57411600904ED7 /* Build configuration list for PBXProject "MyFirstClass" */;
+			buildConfigurationList = B6CE190F1B57411600904ED7 /* Build configuration list for PBXProject "BMITime" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -134,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6CE19131B57411600904ED7 /* MyFirstClass */,
+				B6CE19131B57411600904ED7 /* BMITime */,
 			);
 		};
 /* End PBXProject section */
@@ -226,8 +227,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyFirstClass/MyFirstClass-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MyFirstClass/BMITime-Prefix.pch";
+				PRODUCT_NAME = BMITime;
 			};
 			name = Debug;
 		};
@@ -235,15 +236,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyFirstClass/MyFirstClass-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MyFirstClass/BMITime-Prefix.pch";
+				PRODUCT_NAME = BMITime;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6CE190F1B57411600904ED7 /* Build configuration list for PBXProject "MyFirstClass" */ = {
+		B6CE190F1B57411600904ED7 /* Build configuration list for PBXProject "BMITime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6CE19201B57411600904ED7 /* Debug */,
@@ -252,7 +253,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6CE19221B57411600904ED7 /* Build configuration list for PBXNativeTarget "MyFirstClass" */ = {
+		B6CE19221B57411600904ED7 /* Build configuration list for PBXNativeTarget "BMITime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6CE19231B57411600904ED7 /* Debug */,
