@@ -39,6 +39,7 @@ int main(int argc, const char * argv[])
         // Remove yesterday
         [dateList removeObjectAtIndex:0];
         NSLog(@"Now the first date is %@", dateList[0]);
+
     }
     return 0;
 }
