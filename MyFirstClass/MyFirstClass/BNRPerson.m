@@ -31,7 +31,11 @@
 
 - (float)bodyMassIndex
 {
-    return _weightInKilos/(_weightInKilos*_heightInMeters);
+    //return _weightInKilos/(_weightInKilos*_heightInMeters);
+    
+    float h = [self heightInMeters];
+    int w = [self weightInKilos];
+    return w/(w*h);   // use Self method
 }
 
 
