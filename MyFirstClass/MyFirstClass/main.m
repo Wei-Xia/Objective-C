@@ -17,11 +17,13 @@ int main(int argc, const char * argv[])
     // Create an instance of BNRPerson
     BNRPerson *mikey = [[BNRPerson alloc] init];
     
-    // Give the instance variables interesting values using setters
+    // Give the instance variables interesting values using [*]setters
+        // A setter method, or setter, allows code outside of a class to change/set the value of an instance variable
     [mikey setWeightInKilos:96];
     [mikey setHeightInMeters:1.8];
     
-    // Log the instance varibales using the getters
+    // Log the instance varibales using the [*]getters
+        // A getter method, or getter, allows code outside of a calss to read/get the value of an instance variable
     float height = [mikey heightInMeters];
     int weight = [mikey weightInKilos];
     NSLog(@"mikey is %.2f meters tall and weights %d kilograms", height, weight);
