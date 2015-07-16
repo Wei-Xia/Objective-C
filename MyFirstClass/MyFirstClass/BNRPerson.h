@@ -10,6 +10,7 @@
 
 @interface BNRPerson : NSObject
 
+// Instance varibale declarations
 {
     // BNRPerson has two instance variable
     
@@ -20,10 +21,10 @@
 
 // BNRPerson has methods to read and set its instance variables
 
--(float)heightInMeters;
--(void)setHeightInMeters: (float)h;
--(int)weightInKilos;
--(void)setWeightInKilos: (int)w;
+-(float)heightInMeters;     // Getter method declarations
+-(void)setHeightInMeters: (float)h;   // Setter method declarations - notice difference in casing
+-(int)weightInKilos;        // Getter method declarations
+-(void)setWeightInKilos: (int)w;      // Setter method declarations - notice difference in casing
 
 // BNRPerson has a method that calculate the Boday Mass Index
 -(float)bodyMassIndex;
