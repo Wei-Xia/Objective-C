@@ -14,21 +14,25 @@ int main(int argc, const char * argv[])
 {
     @autoreleasepool {
         
-        // Create an instance of BNRPerson
-        BNRPerson *mikey = [[BNREmployee alloc] init];
+        // Create an instance of BNREmployee
+        BNREmployee *mikey = [[BNREmployee alloc] init];
         
         // Give the instance variables interesting values using [*]setters
-        // A setter method, or setter, allows code outside of a class to change/set the value of an instance variable
         mikey.weightInKilos=96;
         mikey.heightInMeters=1.8;
+        mikey.employeeID=12;
+        mikey.hireDate=[NSDate dateWithNaturalLanguageString:@"Aug 2nd, 2010"];
         
         // Log the instance varibales using the [*]getters
-        NSLog(@"mikey has a weight of %d", mikey.weightInKilos);
-        NSLog(@"mikey has a height of %.1f", mikey.heightInMeters);
+        float height = mikey.heightInMeters;
+        int weight = mikey.weightInKilos;
+        NSLog(@"mikey is %.2f meters tall and weights %d kilos", height, weight);
+        NSLog(@"Employee %d hired on %@", mikey.employeeID, mikey.hireDate);
         
-        // Log some values using custom methods
+        // Log the body mass index using the bodyMassIndex method
         float bmi = [mikey bodyMassIndex];
-        NSLog(@"mikey has a BMI of %.3f", bmi);
+        double years = [mikey yearOfEmployment];
+        NSLog(@"BMI of %.2f, has worked with us for %.2f years.", bmi, years);
         
     }
     return 0;
