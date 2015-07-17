@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BNRPerson.h"
+#import "BNREmployee.h"
 
 
 int main(int argc, const char * argv[])
@@ -15,18 +15,16 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         // Create an instance of BNRPerson
-        BNRPerson *mikey = [[BNRPerson alloc] init];
+        BNRPerson *mikey = [[BNREmployee alloc] init];
         
         // Give the instance variables interesting values using [*]setters
         // A setter method, or setter, allows code outside of a class to change/set the value of an instance variable
-        [mikey setWeightInKilos:96];
-        [mikey setHeightInMeters:1.8];
+        mikey.weightInKilos=96;
+        mikey.heightInMeters=1.8;
         
         // Log the instance varibales using the [*]getters
-        // A getter method, or getter, allows code outside of a calss to read/get the value of an instance variable
-        float height = [mikey heightInMeters];
-        int weight = [mikey weightInKilos];
-        NSLog(@"mikey is %.2f meters tall and weights %d kilograms", height, weight);
+        NSLog(@"mikey has a weight of %d", mikey.weightInKilos);
+        NSLog(@"mikey has a height of %.1f", mikey.heightInMeters);
         
         // Log some values using custom methods
         float bmi = [mikey bodyMassIndex];
