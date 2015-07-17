@@ -10,4 +10,13 @@
 
 @interface BNRPerson : NSObject
 
+// BNRPerson has two properties
+@property (nonatomic) float heightInMeters;
+@property (nonatomic) int weightInKilos;
+
+//@property (nonatomic, readonly/readwrite) int weightInKilos;    //readwrite is the default setting.
+
+// BNRPerson has a method that calculate the Boday Mass Index
+-(float)bodyMassIndex;
+
 @end
