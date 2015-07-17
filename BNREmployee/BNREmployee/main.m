@@ -28,6 +28,8 @@ int main(int argc, const char * argv[])
         int weight = mikey.weightInKilos;
         NSLog(@"mikey is %.2f meters tall and weights %d kilos", height, weight);
         NSLog(@"Employee %d hired on %@", mikey.employeeID, mikey.hireDate);
+        NSDate *date = mikey.hireDate;
+        NSLog(@"%@ hired on %@", mikey, date);
         
         // Log the body mass index using the bodyMassIndex method
         float bmi = [mikey bodyMassIndex];
