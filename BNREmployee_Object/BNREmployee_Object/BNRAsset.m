@@ -10,4 +10,13 @@
 
 @implementation BNRAsset
 
+- (NSString *) description
+{
+    return [NSString stringWithFormat:@"<%@: $%d>", self.label, self.resaleValue];
+}
+
+- (void) dealloc
+{
+    NSLog(@"deallocating %@", self);
+}
 @end
