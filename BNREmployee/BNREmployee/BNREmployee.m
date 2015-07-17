@@ -22,4 +22,10 @@
     else {return 0;}
 }
 
+
+// Overriding methods
+- (float) bodyMassIndex
+{
+    return 19.0;
+}
 @end
