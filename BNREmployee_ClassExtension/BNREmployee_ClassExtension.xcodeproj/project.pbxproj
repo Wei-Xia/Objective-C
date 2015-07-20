@@ -40,6 +40,7 @@
 		B6D7CEAF1B5D73DD007D85F1 /* BNREmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNREmployee.m; sourceTree = "<group>"; };
 		B6D7CEB11B5D73EE007D85F1 /* BNRAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRAsset.h; sourceTree = "<group>"; };
 		B6D7CEB21B5D73EE007D85F1 /* BNRAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRAsset.m; sourceTree = "<group>"; };
+		B6D7CEB41B5D777A007D85F1 /* BNREmployee_officeAlarmCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNREmployee_officeAlarmCode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 				B6D7CEAC1B5D73CF007D85F1 /* BNRPerson.m */,
 				B6D7CEAE1B5D73DD007D85F1 /* BNREmployee.h */,
 				B6D7CEAF1B5D73DD007D85F1 /* BNREmployee.m */,
+				B6D7CEB41B5D777A007D85F1 /* BNREmployee_officeAlarmCode.h */,
 				B6D7CEB11B5D73EE007D85F1 /* BNRAsset.h */,
 				B6D7CEB21B5D73EE007D85F1 /* BNRAsset.m */,
 			);
