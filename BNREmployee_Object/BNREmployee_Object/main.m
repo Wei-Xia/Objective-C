@@ -32,7 +32,7 @@ int main(int argc, const char * argv[])
         }
         
         // Create 10 assets
-        for (int i=0; i<0; i++) {
+        for (int i=0; i<10; i++) {
             // Create an asset
             BNRAsset *asset = [[BNRAsset alloc]init];
             
