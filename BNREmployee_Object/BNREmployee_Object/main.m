@@ -8,34 +8,59 @@
 
 #import <Foundation/Foundation.h>
 #import "BNREmployee.h"
+#import "BNRAsset.h"
 
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool {
         
-        // Create an instance of BNREmployee
-        BNREmployee *mikey = [[BNREmployee alloc] init];
+        // Create an array of BNREmployee objects
+        NSMutableArray *employees = [[NSMutableArray alloc] init];
         
-        // Give the instance variables interesting values using [*]setters
-        mikey.weightInKilos=96;
-        mikey.heightInMeters=1.8;
-        mikey.employeeID=12;
-        mikey.hireDate=[NSDate dateWithNaturalLanguageString:@"Aug 2nd, 2010"];
+        for (int i=0; i<10; i++) {
+            // Create an instance of BNREmployee
+            BNREmployee *mikey = [[BNREmployee alloc] init];
+            
+            // Give the instance varibales interesting values
+            mikey.weightInKilos=90+i;
+            mikey.heightInMeters=1.8-i/10.0;
+            mikey.employeeID=i;
+            
+            // Put the employee in the employees array
+            [employees addObject:mikey];
+        }
         
-        // Log the instance varibales using the [*]getters
-        float height = mikey.heightInMeters;
-        int weight = mikey.weightInKilos;
-        NSLog(@"mikey is %.2f meters tall and weights %d kilos", height, weight);
-        NSLog(@"Employee %d hired on %@", mikey.employeeID, mikey.hireDate);
-        NSDate *date = mikey.hireDate;
-        NSLog(@"%@ hired on %@", mikey, date);
+        // Create 10 assets
+        for (int i=0; i<0; i++) {
+            // Create an asset
+            BNRAsset *asset = [[BNRAsset alloc]init];
+            
+            // Give it an interesting label
+            NSString *currentLable = [NSString stringWithFormat:@"Laptop %d",i];
+            asset.label = currentLable;
+            asset.resaleValue = 350 + i*17;
+            
+            // Get a random number between 0 and 9 inclusive
+            NSUInteger randomIndex = random() % [employees count];
+            
+            // Find that employee
+            BNREmployee *randomEmployee = [employees objectAtIndex:randomIndex];
+            
+            //Assign the asset to the employee
+            [randomEmployee addAssets:asset];
+        }
         
-        // Log the body mass index using the bodyMassIndex method
-        float bmi = [mikey bodyMassIndex];
-        double years = [mikey yearOfEmployment];
-        NSLog(@"BMI of %.2f, has worked with us for %.2f years.", bmi, years);
+        NSLog(@"Employees: %@", employees);
         
+        NSLog(@"Giving up ownership of one employee");
+        
+        [employees removeObjectAtIndex:5];
+        
+        NSLog(@"Giving up ownership of arrays");
+        
+        employees = nil;
+    
     }
     return 0;
 }
