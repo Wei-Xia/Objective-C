@@ -9,6 +9,14 @@
 #import "BNREmployee.h"
 #import "BNRAsset.h"
 
+// A class extension
+@interface BNREmployee()
+{
+    NSMutableArray *_assets;
+}
+
+@end
+
 @implementation BNREmployee
 
 // Accessors for assets properties
