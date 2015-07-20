@@ -42,4 +42,20 @@
     return sum;
 }
 
+- (float) bodyMassIndex
+{
+    float normalBMI = [super bodyMassIndex];
+    return normalBMI *0.9;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<Employee %d in assets>", self.employeeID, self.valueOfAssets];
+}
+
+- (void) dealloc
+{
+    NSLog(@"deallocating %@",self);
+}
+
 @end
