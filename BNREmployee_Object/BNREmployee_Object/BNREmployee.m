@@ -22,7 +22,7 @@
     return [_assets copy];
 }
 
-- (void)addAsset:(BNRAsset *)a
+- (void)addAssets:(BNRAsset *)a
 {
     //Is assets nil?
     if (!_assets){
@@ -37,7 +37,7 @@
     // Sum up the resale value of the assets
     unsigned int sum = 0;
     for (BNRAsset *a in _assets) {
-        sum = sum+[a resaleValue];
+        sum += [a resaleValue];
     }
     return sum;
 }
@@ -50,12 +50,24 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"<Employee %d in assets>", self.employeeID, self.valueOfAssets];
+    return [NSString stringWithFormat:@"<Employee %d: $%d in assets>", self.employeeID, self.valueOfAssets];
 }
 
 - (void) dealloc
 {
     NSLog(@"deallocating %@",self);
+}
+
+-(double) yearOfEmployment
+{
+    // Do i have a non-nil hireDate?
+    if (self.hireDate) {
+        //NSTimeInterval is the same as double
+        NSDate *now = [NSDate date];
+        NSTimeInterval secs = [now timeIntervalSinceDate:self.hireDate];
+        return secs/31557600.0;   //Seconds per year
+    }
+    else {return 0;}
 }
 
 @end
