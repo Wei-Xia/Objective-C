@@ -24,4 +24,5 @@
 -(void)addAssets:(BNRAsset *)a;
 -(unsigned int)valueOfAssets;
 
+
 @end
