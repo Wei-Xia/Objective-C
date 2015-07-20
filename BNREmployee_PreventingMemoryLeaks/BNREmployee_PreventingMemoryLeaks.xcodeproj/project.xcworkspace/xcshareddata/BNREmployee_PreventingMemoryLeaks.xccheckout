@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4EA24738-6D7D-4C3A-9727-7F2670E061F0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BNREmployee_PreventingMemoryLeaks</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FFB973B4-C522-4CE7-A652-9D70525E225E</key>
+		<string>https://github.com/Wei-Xia/Objective-C.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BNREmployee_PreventingMemoryLeaks/BNREmployee_PreventingMemoryLeaks.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FFB973B4-C522-4CE7-A652-9D70525E225E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Wei-Xia/Objective-C.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FFB973B4-C522-4CE7-A652-9D70525E225E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FFB973B4-C522-4CE7-A652-9D70525E225E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Objective-C</string>
+		</dict>
+	</array>
+</dict>
+</plist>
