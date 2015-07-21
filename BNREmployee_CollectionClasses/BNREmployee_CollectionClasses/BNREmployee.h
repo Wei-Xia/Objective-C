@@ -13,11 +13,9 @@
 @interface BNREmployee : BNRPerson
 
 @property (nonatomic) unsigned int employeeID;
-//@property (nonatomic) unsigned int officeAlarmCode;
 @property (nonatomic) NSDate *hireDate;
-@property (nonatomic, copy) NSArray *assets;
+@property (nonatomic, copy) NSSet *assets;
 
--(double)yearOfEmployment;
 -(void)addAssets:(BNRAsset *)a;
 -(unsigned int)valueOfAssets;
 
