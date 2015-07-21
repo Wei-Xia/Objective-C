@@ -68,6 +68,7 @@ int main(int argc, const char * argv[])
             [allAssets addObject:asset];
         }
         
+        
         NSLog(@"Employees: %@", employees);
         
         NSLog(@"Giving up ownership of one employee");
@@ -75,6 +76,13 @@ int main(int argc, const char * argv[])
         [employees removeObjectAtIndex:5];
         
         NSLog(@"allAssets: %@", allAssets);
+        
+        // Print out the entire dictionary
+        NSLog(@"executives: %@", executives);
+        
+        // Print out the CEO's information
+        NSLog(@"CEO: %@", executives[@"CEO"]);
+        executives=nil;
         
         NSLog(@"Giving up ownership of arrays");
         
