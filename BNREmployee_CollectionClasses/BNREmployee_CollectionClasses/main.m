@@ -18,6 +18,9 @@ int main(int argc, const char * argv[])
         // Create an array of BNREmployee objects
         NSMutableArray *employees = [[NSMutableArray alloc] init];
         
+        // Create a dictionary of executives
+        NSMutableDictionary *executives = [[NSMutableDictionary alloc] init];
+        
         for (int i=0; i<10; i++) {
             // Create an instance of BNREmployee
             BNREmployee *mikey = [[BNREmployee alloc] init];
@@ -29,6 +32,16 @@ int main(int argc, const char * argv[])
             
             // Put the employee in the employees array
             [employees addObject:mikey];
+            
+            // Is this the first employee?
+            if (i==0){
+                [executives setObject:mikey forKey:@"CEO"];
+            }
+            
+            // Is this the second employee?
+            if (i==1){
+                [executives setObject:mikey forKey:@"CTO"];
+            }
         }
         
         NSMutableArray *allAssets = [[NSMutableArray alloc] init];
@@ -68,6 +81,5 @@ int main(int argc, const char * argv[])
         employees = nil;
         
     }
-    sleep(100);
     return 0;
 }
