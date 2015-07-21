@@ -13,6 +13,6 @@
 
 @property (nonatomic, copy) NSString *label;
 @property (nonatomic) unsigned int resaleValue;
-@property (nonatomic) BNREmployee *holder;
+@property (nonatomic, weak) BNREmployee *holder;   // weak references
 
 @end
