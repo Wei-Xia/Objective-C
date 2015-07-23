@@ -22,7 +22,7 @@ int main(int argc, const char * argv[])
               atomically:YES
                 encoding:NSUTF8StringEncoding
                    error:NULL];
-             NSLog(@"done writing /tmp/cool.txt");
+             NSLog(@"done writing /desktop/cool.txt");   // Use Find - Go, enter /Volumes/Macintosh HD/private/tmp to find the file
         
     }
     return 0;
