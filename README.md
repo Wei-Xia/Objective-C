@@ -17,7 +17,9 @@ http://forums.bignerdranch.com/viewforum.php?f=435
 
 ---------Notes---------------
 %@     对象
+
 %d, %i 整数
+
 %u     无符整形
 %f     浮点/双字
 %x, %X 二进制整数
