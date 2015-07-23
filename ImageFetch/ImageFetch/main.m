@@ -28,7 +28,7 @@ int main(int argc, const char * argv[])
         NSLog(@"The file is %lu bytes", (unsigned long)[data length]);
         
         BOOL written = [data writeToFile:@"/tmp/google.png"
-                                    options:0
+                                    options:NSDataWritingAtomic
                                    error:&error];
         
         if (!written) {
