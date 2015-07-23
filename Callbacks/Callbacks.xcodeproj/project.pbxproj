@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B601D7331B6128C300EFF3F2 /* BNRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B601D7321B6128C300EFF3F2 /* BNRLogger.m */; };
 		B6FBC0F61B608DAD00305516 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FBC0F51B608DAD00305516 /* Foundation.framework */; };
 		B6FBC0F91B608DAD00305516 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBC0F81B608DAD00305516 /* main.m */; };
 		B6FBC0FD1B608DAD00305516 /* Callbacks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6FBC0FC1B608DAD00305516 /* Callbacks.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B601D7311B6128C300EFF3F2 /* BNRLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLogger.h; sourceTree = "<group>"; };
+		B601D7321B6128C300EFF3F2 /* BNRLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLogger.m; sourceTree = "<group>"; };
 		B6FBC0F21B608DAD00305516 /* Callbacks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Callbacks; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FBC0F51B608DAD00305516 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6FBC0F81B608DAD00305516 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				B6FBC0F81B608DAD00305516 /* main.m */,
+				B601D7311B6128C300EFF3F2 /* BNRLogger.h */,
+				B601D7321B6128C300EFF3F2 /* BNRLogger.m */,
 				B6FBC0FC1B608DAD00305516 /* Callbacks.1 */,
 				B6FBC0FA1B608DAD00305516 /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B601D7331B6128C300EFF3F2 /* BNRLogger.m in Sources */,
 				B6FBC0F91B608DAD00305516 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +259,7 @@
 				B6FBC1021B608DAD00305516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
