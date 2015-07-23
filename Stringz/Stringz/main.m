@@ -16,7 +16,7 @@ int main(int argc, const char * argv[])
         NSMutableString *str = [[NSMutableString alloc] init];
         
         for (int i=0; i<10; i++) {
-            [str appendString:@"Aaron is cool! n\"];
+            [str appendString:@"Aaron is cool! \n"];
         }
         [str writeToFile:@"/tmp/cool.txt"
               atomically:YES
