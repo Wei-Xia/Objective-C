@@ -16,11 +16,17 @@ int main(int argc, const char * argv[])
         
         BNRLogger *logger = [[BNRLogger alloc]init];
         
-        NSTimer *timer= [NSTimer scheduledTimerWithTimeInterval:2.0
-                                                         target:logger
-                                                       selector:@selector(updateLastTime:)
-                                                       userInfo:nil
-                                                        repeats:YES];
+//        NSTimer *timer= [NSTimer scheduledTimerWithTimeInterval:2             //unused variable warning
+//                                                         target:logger
+//                                                       selector:@selector(updateLastTime:)
+//                                                       userInfo:nil
+//                                                        repeats:YES];
+        
+        __unused NSTimer *timers = [NSTimer scheduledTimerWithTimeInterval:2.0     //silence the warning with __unused modifier
+                                                                    target:logger
+                                                                  selector:@selector(updateLastTime:)
+                                                                  userInfo:nil
+                                                                   repeats:YES];
         
         [[NSRunLoop currentRunLoop] run];
         
