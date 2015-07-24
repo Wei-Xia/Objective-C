@@ -36,7 +36,7 @@ int main(int argc, const char * argv[])
             for (NSString *s in vowels) {
                 NSRange fullRange = NSMakeRange(0, [newString length]);
                 [newString replaceOccurrencesOfString:s
-                                         withString:@" "
+                                         withString:@"$"
                                             options:NSCaseInsensitiveSearch
                                               range:fullRange];
             }
@@ -45,7 +45,9 @@ int main(int argc, const char * argv[])
             
         }; //End of block assignment
         
-        
+        // Iterate over the array with your block
+        [originalStrings enumerateObjectsUsingBlock:devowelizer];
+        NSLog(@"devowelized strings: %@", devowelizedStrings);
     }
     return 0;
 }
