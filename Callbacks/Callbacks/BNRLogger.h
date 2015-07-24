@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface BNRLogger : NSObject
-<NSURLConnectionDataDelegate, NSURLConnectionDataDelegate>
+    <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+
+{
+    NSMutableData *incomingData;
+}
 
 @property (nonatomic) NSDate *lastTime;
 - (NSString *)lastTimeString;

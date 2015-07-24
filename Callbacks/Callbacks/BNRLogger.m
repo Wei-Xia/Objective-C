@@ -10,6 +10,8 @@
 
 @implementation BNRLogger
 
+
+
 - (NSString *)lastTimeString
 {
     static NSDateFormatter *dateFormatter = nil;
