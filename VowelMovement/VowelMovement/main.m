@@ -22,6 +22,9 @@ int main(int argc, const char * argv[])
         
         // Create a list of characters to be removed from the string
         NSArray *vowels = @[@"a", @"e", @"i", @"o", @"u"];
+        
+        // Declare the block variable
+        void (^devowelized)(id, NSUInteger, BOOL *);
     }
     return 0;
 }
