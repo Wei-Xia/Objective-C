@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef  void (^ArrayEnumerationBlock)(id, NSUInteger, BOOL *);
+
 int main(int argc, const char * argv[])
 {
 
@@ -23,12 +25,13 @@ int main(int argc, const char * argv[])
         // Create a list of characters to be removed from the string
         NSArray *vowels = @[@"a", @"e", @"i", @"o", @"u"];
         
-//        // Declare the block variable
+        // Declare the block variable
 //        void (^devowelized)(id, NSUInteger, BOOL *);
-//        
-//        // Compose a block and assign it to the variable
-//        devowelized = ^(id string, NSUInteger i, BOOL *stop){
-        void (^devowelizer)(id, NSUInteger, BOOL *) = ^(id string, NSUInteger i, BOOL *stop){    //combine two steps into one step
+        ArrayEnumerationBlock devowelizer;
+        
+        // Compose a block and assign it to the variable
+        devowelizer = ^(id string, NSUInteger i, BOOL *stop){
+//        void (^devowelizer)(id, NSUInteger, BOOL *) = ^(id string, NSUInteger i, BOOL *stop){    //combine two steps into one step
         
             NSRange yRange = [string rangeOfString:@"y" options:NSCaseInsensitiveSearch];
             
