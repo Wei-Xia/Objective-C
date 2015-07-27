@@ -29,6 +29,8 @@ int main(int argc, const char * argv[])
         
         [stock writeToFile:@"/tmp/stocks.plist" atomically:YES];
         
+        // file location: /Volumes/Macintosh HD/private/tmp
+        
     }
     return 0;
 }
