@@ -31,6 +31,12 @@ int main(int argc, const char * argv[])
         
         // file location: /Volumes/Macintosh HD/private/tmp
         
+        NSArray *stockList = [NSArray arrayWithContentsOfFile:@"/tmp/stocks.plist"];
+        
+        for (NSDictionary *d in stockList) {
+            NSLog(@"I have %@ shares of %@.", [d objectForKey:@"shares"], [d objectForKey:@"symbol"]);
+        }
+        
     }
     return 0;
 }
