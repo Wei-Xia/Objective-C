@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BB80CD70-CFFD-4622-A6EC-E87FAAB00F69</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Stockz</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>04C04686-D93F-47BC-BADF-B0AC0460D29E</key>
+		<string>https://github.com/Wei-Xia/Objective-C.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Stockz/Stockz.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>04C04686-D93F-47BC-BADF-B0AC0460D29E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Wei-Xia/Objective-C.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>04C04686-D93F-47BC-BADF-B0AC0460D29E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>04C04686-D93F-47BC-BADF-B0AC0460D29E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Stockz</string>
+		</dict>
+	</array>
+</dict>
+</plist>
