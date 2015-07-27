@@ -46,6 +46,9 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     // Give the button a title
     [self.insertButton setTitle:@"Insert" forState:UIControlStateNormal];
     
+    // Set the target and action for the Insert button
+    [self.insertButton addTarget:self action:@selector(addTask:) forControlEvents:UIControlEventTouchUpInside];
+    
     // Add our three UI elements to the window
     [self.window addSubview:self.taskTable];
     [self.window addSubview:self.taskField];
