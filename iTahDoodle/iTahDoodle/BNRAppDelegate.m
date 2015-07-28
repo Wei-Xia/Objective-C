@@ -23,8 +23,19 @@ NSString *BNRDocPath()
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Create an empty array to get us started
-    self.tasks = [NSMutableArray array];
+//    // Create an empty array to get us started
+//    self.tasks = [NSMutableArray array];
+    
+    // Load an existing dataset or create a new one
+    NSArray *plist = [NSArray arrayWithContentsOfFile:BNRDocPath()];
+    if (plist) {
+        // We have a dataset, copy it into tasks
+        self.tasks = [plist mutableCopy];
+    } else {
+        // There is no dataset; create an empty array
+        self.tasks = [NSMutableArray array];
+    }
+    
     
     // Create and configure the UIWindows instance
     // A CGRect is a struct with an origin (x,y) and a size (width, height)
@@ -86,6 +97,9 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    // Save our tasks array to disk
+    [self.tasks writeToFile:BNRDocPath() atomically:YES];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
