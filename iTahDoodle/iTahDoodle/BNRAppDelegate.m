@@ -89,4 +89,25 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)addTask:(id)sender
+{
+    // Get the task
+    NSString *text = [self.taskField text];
+    
+    // Quit here if taskField is empty
+    if ([text length] == 0) {
+        return;
+    }
+    
+    // Log text to console
+    NSLog(@"Task entered: %@", text);
+    
+    // Clear out the text field
+    [self.taskField setText:@""];
+    
+    // Dismiss the keyboard
+    [self.taskField resignFirstResponder];
+    
+}
+
 @end
