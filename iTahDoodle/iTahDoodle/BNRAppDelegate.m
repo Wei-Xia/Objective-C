@@ -31,6 +31,9 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     self.taskTable = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
     self.taskTable.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    // Make the BNRAppDelegate the table view's dataSource
+    self.taskTable.dataSource = self;
+    
     // Tell the table view which class to instantiate whenever it needs to create a new cell
     [self.taskTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
@@ -89,6 +92,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma  mark - Actions
+
 - (void)addTask:(id)sender
 {
     // Get the task
@@ -108,6 +113,29 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     // Dismiss the keyboard
     [self.taskField resignFirstResponder];
     
+}
+
+#pragma mark - Table view management
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Because this table view only has one section, the number of rows in it is equal to the number of items in the tasks array
+    return [self.tasks count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // To improve performance, this method first checks for an existing cell object that we can reuse
+    // if thre isn't one, then a new cell is created.
+    UITableViewCell *c = [self.taskTable dequeueReusableHeaderFooterViewWithIdentifier:@"Cell"];
+    
+    // Then we (re)configure the cell based on the model object,
+    // in this case the tasks array, ....
+    NSString *item = [self.tasks objectAtIndex:indexPath.row];
+    c.textLabel.text = item;
+    
+    // ... and hand the properly configured cell back to the table view
+    return c;
 }
 
 @end
