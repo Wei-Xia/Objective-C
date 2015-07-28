@@ -8,6 +8,14 @@
 
 #import "BNRAppDelegate.h"
 
+// Helper function to fetch the path to our to-do data stored on disk
+
+NSString *BNRDocPath()
+{
+    NSArray *pathList = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    return [pathList[0] stringByAppendingPathComponent:@"data.td"];
+}
+
 @implementation BNRAppDelegate
 
 #pragma mark - Application delegate callbacks
