@@ -15,6 +15,9 @@
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Create an empty array to get us started
+    self.tasks = [NSMutableArray array];
+    
     // Create and configure the UIWindows instance
     // A CGRect is a struct with an origin (x,y) and a size (width, height)
     CGRect winFrame = [[UIScreen mainScreen] bounds];
@@ -104,8 +107,14 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
         return;
     }
     
-    // Log text to console
-    NSLog(@"Task entered: %@", text);
+//    // Log text to console
+//    NSLog(@"Task entered: %@", text);
+    
+    // Add it to the working array
+    [self.tasks addObject:text];
+    
+    // Refresh the table so that the new item shows up
+    [self.taskTable reloadData];
     
     // Clear out the text field
     [self.taskField setText:@""];
