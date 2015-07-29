@@ -29,10 +29,10 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-                    <scrollView appearanceType="aqua" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpE-uu-SvZ">
+                    <scrollView appearanceType="aqua" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpE-uu-SvZ">
                         <rect key="frame" x="20" y="61" width="467" height="332"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <clipView key="contentView" ambiguous="YES" misplaced="YES" id="9QD-1g-RcY">
+                        <clipView key="contentView" id="9QD-1g-RcY">
                             <rect key="frame" x="1" y="17" width="465" height="314"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -62,11 +62,11 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="FQR-qV-ETI">
-                            <rect key="frame" x="-7" y="2" width="0.0" height="15"/>
+                            <rect key="frame" x="-6.5" y="2" width="0.0" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="7dE-Td-9uW">
-                            <rect key="frame" x="-14" y="9" width="15" height="0.0"/>
+                            <rect key="frame" x="-14" y="9.5" width="15" height="0.0"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" id="ZMh-uR-hG7">
@@ -75,6 +75,12 @@
                         </tableHeaderView>
                     </scrollView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TpE-uu-SvZ" secondAttribute="bottom" constant="61" id="G29-nW-4wH"/>
+                    <constraint firstItem="TpE-uu-SvZ" firstAttribute="leading" secondItem="gIp-Ho-8D9" secondAttribute="leading" constant="20" id="NY6-Jq-3qZ"/>
+                    <constraint firstItem="TpE-uu-SvZ" firstAttribute="top" secondItem="gIp-Ho-8D9" secondAttribute="top" constant="20" id="O2x-om-gpx"/>
+                    <constraint firstAttribute="trailing" secondItem="TpE-uu-SvZ" secondAttribute="trailing" constant="20" id="hXb-kO-9PJ"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
