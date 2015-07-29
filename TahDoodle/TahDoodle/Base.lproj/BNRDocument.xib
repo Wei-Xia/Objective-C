@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="BNRDocument">
             <connections>
+                <outlet property="taskTable" destination="xPc-ze-BEs" id="QUo-5e-mzw"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
         </customObject>
