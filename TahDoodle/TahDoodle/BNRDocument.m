@@ -41,21 +41,37 @@
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
 {
-    // Insert code here to write your document to data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning nil.
-    // You can also choose to override -fileWrapperOfType:error:, -writeToURL:ofType:error:, or -writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
-    NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
-    @throw exception;
-    return nil;
+    // This method is called when our document is being saved
+    // You are expected to hand the caller an NSData object wrapping our data so that it can be written to disk
+    // If there is no array, write out an empty array.
+    if (!self.tasks) {
+        self.tasks = [NSMutableArray array];
+    }
+    
+    // Pack the tasks array into an NSData object
+    NSData *data = [NSPropertyListSerialization
+                    dataWithPropertyList:self.tasks
+                    format:NSPropertyListXMLFormat_v1_0
+                    options:0
+                    error:outError];
+    
+    // Return the newly-packed NSData object
+    return data;
 }
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
 {
-    // Insert code here to read your document from the given data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning NO.
-    // You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.
-    // If you override either of these, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.
-    NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
-    @throw exception;
-    return YES;
+    // This method is called when a document is being loaded
+    // You are handed an NSData object and expected to pull our data out of it
+    // Extract the tasks
+    self.tasks = [NSPropertyListSerialization
+                  propertyListWithData:data
+                  options:NSPropertyListMutableContainers
+                  format:NULL
+                  error:outError];
+    
+    // Return success or failure depending on success of the above call
+    return (self.tasks != nil);
 }
 
 #pragma mark Data Source Methods
