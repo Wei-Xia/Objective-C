@@ -21,13 +21,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="507" height="413"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1KM-bG-4pt">
+                    <button appearanceType="aqua" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1KM-bG-4pt">
                         <rect key="frame" x="14" y="13" width="97" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Add Task" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UsX-Wa-UO8">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="addtasks:" target="-2" id="TD9-4V-Pif"/>
+                        </connections>
                     </button>
                     <scrollView appearanceType="aqua" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpE-uu-SvZ">
                         <rect key="frame" x="20" y="61" width="467" height="332"/>
@@ -62,11 +65,11 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="FQR-qV-ETI">
-                            <rect key="frame" x="-6.5" y="2" width="0.0" height="15"/>
+                            <rect key="frame" x="-7" y="2" width="0.0" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="7dE-Td-9uW">
-                            <rect key="frame" x="-14" y="9.5" width="15" height="0.0"/>
+                            <rect key="frame" x="-14" y="9" width="15" height="0.0"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" id="ZMh-uR-hG7">
@@ -79,7 +82,9 @@
                     <constraint firstAttribute="bottom" secondItem="TpE-uu-SvZ" secondAttribute="bottom" constant="61" id="G29-nW-4wH"/>
                     <constraint firstItem="TpE-uu-SvZ" firstAttribute="leading" secondItem="gIp-Ho-8D9" secondAttribute="leading" constant="20" id="NY6-Jq-3qZ"/>
                     <constraint firstItem="TpE-uu-SvZ" firstAttribute="top" secondItem="gIp-Ho-8D9" secondAttribute="top" constant="20" id="O2x-om-gpx"/>
+                    <constraint firstItem="1KM-bG-4pt" firstAttribute="leading" secondItem="gIp-Ho-8D9" secondAttribute="leading" constant="20" id="Xse-fc-755"/>
                     <constraint firstAttribute="trailing" secondItem="TpE-uu-SvZ" secondAttribute="trailing" constant="20" id="hXb-kO-9PJ"/>
+                    <constraint firstAttribute="bottom" secondItem="1KM-bG-4pt" secondAttribute="bottom" constant="20" id="qgf-tj-6Od"/>
                 </constraints>
             </view>
             <connections>
