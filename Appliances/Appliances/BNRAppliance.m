@@ -10,4 +10,19 @@
 
 @implementation BNRAppliance
 
+-(instancetype) init
+{
+    // Call the NSObject's init method
+    self = [super init];
+    
+    // Did it return something non-nil?
+    if (self) {
+        // Give voltage a starting value
+        _voltage = 120;
+    }
+    
+     // Return a pointer to the new project
+    return self;
+}
+
 @end
