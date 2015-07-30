@@ -10,13 +10,17 @@
 
 @implementation BNRAppliance
 
--(instancetype) init
+-(instancetype) initWithProductName:(NSString *)pn
 {
     // Call the NSObject's init method
     self = [super init];
     
     // Did it return something non-nil?
     if (self) {
+        
+        // Set the product name
+        _productName = [pn copy];
+        
         // Give voltage a starting value
         _voltage = 120;
     }
