@@ -125,6 +125,4 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 }
 
 
-
-
 @end
