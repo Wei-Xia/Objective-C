@@ -1,8 +1,8 @@
 //
 //  main.m
-//  Appliances
+//  Appliances_Key-Value
 //
-//  Created by Wei on 7/30/15.
+//  Created by Wei on 7/31/15.
 //  Copyright (c) 2015 Gate Inc. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 
 int main(int argc, const char * argv[])
 {
-
+    
     @autoreleasepool {
         
         BNRAppliance *a = [[BNRAppliance alloc]init];
@@ -19,7 +19,7 @@ int main(int argc, const char * argv[])
         [a setProductName:@"Washing Machine"];
         [a setVoltage:240];
         NSLog(@"a is %@", a);
-
+        
         
     }
     return 0;
