@@ -19,10 +19,12 @@
     if (self) {
         
         // Set the product name
-        _productName = [pn copy];
+//        _productName = [pn copy];
+        [self setProductName:pn];
         
         // Give voltage a starting value
-        _voltage = 120;
+//        _voltage = 120;
+        [self setVoltage:120];
     }
     
      // Return a pointer to the new project
@@ -33,5 +35,17 @@
 {
     return [self initWithProductName:@"Unknown"];
 }
+
+-(NSString *)description
+{
+    return [NSString stringWithFormat:@"%@: %d volts", self.productName, self.voltage];
+}
+
+-(instancetype)initWithProductName:(NSString *)pn
+{
+    
+}
+
+
 
 @end
