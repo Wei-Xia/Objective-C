@@ -29,4 +29,9 @@
     return self;
 }
 
+-(instancetype) init
+{
+    return [self initWithProductName:@"Unknown"];
+}
+
 @end
