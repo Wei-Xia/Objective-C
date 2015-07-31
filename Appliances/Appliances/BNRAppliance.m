@@ -10,24 +10,33 @@
 
 @implementation BNRAppliance
 
+//-(instancetype) initWithProductName:(NSString *)pn
+//{
+//    // Call the NSObject's init method
+//    self = [super init];
+//    
+//    // Did it return something non-nil?
+//    if (self) {
+//        
+//        // Set the product name
+////        _productName = [pn copy];
+//        [self setProductName:pn];
+//        
+//        // Give voltage a starting value
+////        _voltage = 120;
+//        [self setVoltage:120];
+//    }
+//    
+//     // Return a pointer to the new project
+//    return self;
+//}
+
 -(instancetype) initWithProductName:(NSString *)pn
 {
-    // Call the NSObject's init method
-    self = [super init];
-    
-    // Did it return something non-nil?
-    if (self) {
-        
-        // Set the product name
-//        _productName = [pn copy];
-        [self setProductName:pn];
-        
-        // Give voltage a starting value
-//        _voltage = 120;
-        [self setVoltage:120];
+    if (self = [super init]) {
+        _productName = [pn copy];
+        _voltage = 120;
     }
-    
-     // Return a pointer to the new project
     return self;
 }
 
@@ -41,10 +50,6 @@
     return [NSString stringWithFormat:@"%@: %d volts", self.productName, self.voltage];
 }
 
--(instancetype)initWithProductName:(NSString *)pn
-{
-    
-}
 
 
 
