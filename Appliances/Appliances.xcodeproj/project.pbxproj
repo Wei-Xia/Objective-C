@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6415A2F1B6B1FB3005CBD69 /* BNROwnedAppliance.m in Sources */ = {isa = PBXBuildFile; fileRef = B6415A2E1B6B1FB3005CBD69 /* BNROwnedAppliance.m */; };
 		B69193C31B6A69B700D849C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69193C21B6A69B700D849C5 /* Foundation.framework */; };
 		B69193C61B6A69B700D849C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69193C51B6A69B700D849C5 /* main.m */; };
 		B69193CA1B6A69B700D849C5 /* Appliances.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69193C91B6A69B700D849C5 /* Appliances.1 */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6415A2D1B6B1FB3005CBD69 /* BNROwnedAppliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNROwnedAppliance.h; sourceTree = "<group>"; };
+		B6415A2E1B6B1FB3005CBD69 /* BNROwnedAppliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNROwnedAppliance.m; sourceTree = "<group>"; };
 		B69193BF1B6A69B700D849C5 /* Appliances */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Appliances; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69193C21B6A69B700D849C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B69193C51B6A69B700D849C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 				B69193C51B6A69B700D849C5 /* main.m */,
 				B69193D01B6A69E900D849C5 /* BNRAppliance.h */,
 				B69193D11B6A69E900D849C5 /* BNRAppliance.m */,
+				B6415A2D1B6B1FB3005CBD69 /* BNROwnedAppliance.h */,
+				B6415A2E1B6B1FB3005CBD69 /* BNROwnedAppliance.m */,
 				B69193C91B6A69B700D849C5 /* Appliances.1 */,
 				B69193C71B6A69B700D849C5 /* Supporting Files */,
 			);
@@ -145,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B69193D21B6A69E900D849C5 /* BNRAppliance.m in Sources */,
+				B6415A2F1B6B1FB3005CBD69 /* BNROwnedAppliance.m in Sources */,
 				B69193C61B6A69B700D849C5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +265,7 @@
 				B69193CF1B6A69B700D849C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
