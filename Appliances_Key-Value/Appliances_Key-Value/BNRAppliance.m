@@ -6,6 +6,10 @@
 //  Copyright (c) 2015 Gate Inc. All rights reserved.
 //
 
+#import "BNRAppliance.h"
+
+@implementation BNRAppliance
+
 -(instancetype) initWithProductName:(NSString *)pn
 {
     if (self = [super init]) {
