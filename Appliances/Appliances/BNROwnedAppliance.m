@@ -17,6 +17,11 @@
 
 @implementation BNROwnedAppliance
 
+-(instancetype)initWithProductName:(NSString *)pn
+{
+    return [self initWithProductName:pn firstOwnerName:nil];
+}
+
 -(instancetype)initWithProductName:(NSString *)pn firstOwnerName:(NSString *)n
 {
     // Call the superclass's initalizer
@@ -35,7 +40,20 @@
     return self;
 }
 
+-(void)addOwnerNames:(NSString *)n
+{
+    [_ownerNames addObject:n];
+}
 
+-(void)removeOwnerNames:(NSString *)n
+{
+    [_ownerNames removeObject:n];
+}
+
+-(NSSet *)ownerNames
+{
+    return [_ownerNames copy];
+}
 
 
 @end

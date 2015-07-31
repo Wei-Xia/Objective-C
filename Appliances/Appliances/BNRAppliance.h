@@ -14,4 +14,7 @@
 @property (nonatomic) int voltage;
 - (instancetype)initWithProductName:(NSString *)pn;
 
+// The designated initializer
+-(instancetype)initWithProductName:(NSString *)pn;
+
 @end
