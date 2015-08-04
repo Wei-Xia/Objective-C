@@ -16,7 +16,14 @@ int main(int argc, const char * argv[])
     unsigned char c = a|b;
     
     printf("Hex: %x | %x = %x\n",a,b,c);
-    printf("Decimal: %d | %d = %d\n", a,b,c);
+    printf("Decimal: %d | %d = %d\n\n", a,b,c);
+    
+    unsigned char d = a&b;
+    
+    printf("Hex: %x & %x = %x\n",a,b,d);
+    printf("Decimal: %d & %d = %d\n", a,b,d);
+    
     return 0;
+    
 }
 
