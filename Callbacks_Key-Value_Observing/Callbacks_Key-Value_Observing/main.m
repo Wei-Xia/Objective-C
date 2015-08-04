@@ -27,7 +27,8 @@ int main(int argc, const char * argv[])
         __unused BNRObserver *observer = [[BNRObserver alloc] init];
         // I want to know the new value and the old value whenever lastTime is changed
         [logger addObserver:observer
-                 forKeyPath:@"lastTime"
+                 forKeyPath:@"lastTimeString"
+//                 forKeyPath:@"lastTime"
                     options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
                     context:nil];
         
