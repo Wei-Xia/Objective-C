@@ -10,4 +10,6 @@
 
 @interface NSString (BNRVowelCounting)
 
+- (int)bnr_vowelCount;
+
 @end

@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSString+BNRVowelCounting.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        NSString *string = @"Hellow World";
+        NSLog(@"%@ has %d vowels", string, [string bnr_vowelCount]);
     }
     return 0;
 }
