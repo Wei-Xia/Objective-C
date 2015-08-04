@@ -16,8 +16,8 @@
     
     NSUInteger count = [self length];
     int sum=0;
-    for (int=0; i<count; i++) {
-        unichar c = [self characterAtIndex:i];
+    for (int i = 0; i < count; i++) {
+        unichar c=[self characterAtIndex:i];
         if ([charSet characterIsMember:c]) {
             sum++;
         }

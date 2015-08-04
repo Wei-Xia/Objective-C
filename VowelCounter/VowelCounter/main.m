@@ -15,7 +15,7 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         NSString *string = @"Hellow World";
-        NSLog(@"%@ has %d vowels", string, [string bnr_vowelCount]);
+        NSLog(@"\"%@\" has %d vowels", string, [string bnr_vowelCount]);
     }
     return 0;
 }
