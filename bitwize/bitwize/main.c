@@ -31,8 +31,17 @@ int main(int argc, const char * argv[])
     unsigned char f = ~b;
     
     printf("Hex: The complement of %x is %x\n",b,f);
-    printf("Decimal: The complement of %d is %d\n\n", b,f);  // Exclusive-OR
+    printf("Decimal: The complement of %d is %d\n\n", b,f);  // Complement
 
+    unsigned char g = a << 2;
+    
+    printf("Hex: %x shifted left two places is %x\n", a, g);
+    printf("Decimal: %d shifted left two places is %d\n\n", a, g); // Left-shift   Every
+    
+    unsigned char g = a << 2;
+    
+    printf("Hex: %x shifted left two places is %x\n", a, g);
+    printf("Decimal: %d shifted left two places is %d\n\n", a, g); // Left-shift
     
     return 0;
     
