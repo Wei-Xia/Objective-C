@@ -11,8 +11,12 @@
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
+    char x = 0x21; // The character "!"
+    
+    while (x <= 0x7e) { // The character "~"
+        printf("%x is %c\n", x,x);
+        x++;
+    }
     return 0;
 }
 
