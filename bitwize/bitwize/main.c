@@ -36,12 +36,14 @@ int main(int argc, const char * argv[])
     unsigned char g = a << 2;
     
     printf("Hex: %x shifted left two places is %x\n", a, g);
-    printf("Decimal: %d shifted left two places is %d\n\n", a, g); // Left-shift   Every
-    
-    unsigned char g = a << 2;
-    
-    printf("Hex: %x shifted left two places is %x\n", a, g);
     printf("Decimal: %d shifted left two places is %d\n\n", a, g); // Left-shift
+//  Every time you left-shift a number one place, you double its value.
+    
+    unsigned char h = a >> 1;
+    
+    printf("Hex: %x shifted right one place is %x\n", a, h);
+    printf("Decimal: %d shifted right one place is %d\n\n", a, h); // Right-shift
+//  Every time you right-shift a number one place, you halve its value (If it is odd, round down.)
     
     return 0;
     
