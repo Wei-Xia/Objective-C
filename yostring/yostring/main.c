@@ -17,6 +17,14 @@ int main(int argc, const char * argv[])
         printf("%x is %c\n", x,x);
         x++;
     }
+    
+//    char x = '!'; // The character "!"
+//    
+//    while (x <= '~') { // The character "~"
+//        printf("%x is %c\n", x,x);
+//        x++;
+//    }
+    
     return 0;
 }
 
