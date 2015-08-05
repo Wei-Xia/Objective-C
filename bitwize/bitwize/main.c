@@ -21,7 +21,18 @@ int main(int argc, const char * argv[])
     unsigned char d = a&b;
     
     printf("Hex: %x & %x = %x\n",a,b,d);
-    printf("Decimal: %d & %d = %d\n", a,b,d);  // Bitwise-AND
+    printf("Decimal: %d & %d = %d\n\n", a,b,d);  // Bitwise-AND
+    
+    unsigned char e = a^b;
+    
+    printf("Hex: %x ^ %x = %x\n",a,b,e);
+    printf("Decimal: %d ^ %d = %d\n\n", a,b,e);  // Exclusive-OR
+
+    unsigned char f = ~b;
+    
+    printf("Hex: The complement of %x is %x\n",b,f);
+    printf("Decimal: The complement of %d is %d\n\n", b,f);  // Exclusive-OR
+
     
     return 0;
     
