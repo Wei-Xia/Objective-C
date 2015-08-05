@@ -11,8 +11,11 @@
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
+    const char *start = "A backslash after two newlines and a tab: \n\n\t\\";
+    
+    printf("%s has %zu characters\n", start, strlen(start));
+    printf("The third letter is %c\n", start[2]);
+    
     return 0;
 }
 
