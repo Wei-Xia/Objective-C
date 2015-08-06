@@ -16,6 +16,7 @@ int main(int argc, const char * argv[])
     printf("%s has %zu characters\n", start, strlen(start));
     printf("The third letter is %c\n", start[2]);
     
+    
     return 0;
 }
 
