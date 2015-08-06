@@ -30,9 +30,14 @@ int main(int argc, const char * argv[])
     gradeBook[1] = 94.5;
     gradeBook[2] = 81.1;
     
-    // Cal
+    // Calculate the average
+    float average = averageFloats(gradeBook, 3);
     
+    // Free the array
+    free(gradeBook);
+    gradeBook = NULL;
     
+    printf("Average = %.2f\n", average);
     
     return 0;
 }
